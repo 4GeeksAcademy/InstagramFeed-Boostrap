@@ -1,0 +1,60 @@
+.navbar {
+    padding-bottom: 15px;
+    /* font-size: 40px; */
+}
+.fa-instagram {
+    margin-right: 8px;
+    font-size: 28px;
+}
+.d-flex {
+    /* border: solid 1px red; */
+    margin-right: 30px;
+}
+.nav-tabs {
+    /* border: solid 2px red; */
+    margin-left: 50%;
+}
+ .img-cont {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    margin-top: 10px;
+} 
+.card {
+    width: 400px;
+    height: auto;
+    margin: 25px auto;
+}
+.card-img-top {
+    border-radius: 0;
+}
+.titulo {
+    margin: 10px 10px 0 10px;
+    font-size: 20px;
+}
+.card-body {
+    padding: 7px;
+}
+.card-body p {
+    margin-bottom: 5px;
+}
+.text-secondary {
+    font-size: 15px;
+}
+.fa-camera, .fa-location-dot {
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px 5px 0 0;
+    padding: 5px;
+    width: 35px;
+    border-radius: 2px;
+    border: solid 1px #E1E1E1;
+    background-color: #E8E7E7;
+}
+.dropdown-menu li a {
+    font-weight: 500;
+}
+.container-fluid a {
+    font-size: 30px;
+}

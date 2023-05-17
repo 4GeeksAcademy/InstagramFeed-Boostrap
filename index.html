@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instagram Feed 2.0</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/db18036b63.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/style.css">
+    
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <div class="d-flex">
+
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn btn-success mx-4" type="submit" data-bs-target="#exampleModal" data-bs-toggle="modal">Create a New Post</button>
+
+              <!-- MODAL -->
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label"><strong>Caption:</strong></label>
+                          <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                          <i class="fa-solid fa-camera"></i>
+                          <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DROPDOWN MENU -->
+
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- TABS -->
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-th" aria-hidden="true"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-square" aria-hidden="true"></i></button>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">
+
+            <!-- IMAGENES 1 -->
+            
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://i.blogs.es/ceda9c/dalle/1366_2000.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://cdn.pixabay.com/photo/2014/12/16/22/25/woman-570883_1280.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://us.123rf.com/450wm/aprillrain/aprillrain2209/aprillrain220900194/191556087-imagen-abstracta-de-los-cielos-abiertos-el-camino-el-camino-al-cielo-ilustraci%C3%B3n-de-alta-calidad.jpg?ver=6" alt="">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://photo980x880.mnstatic.com/37f93c7924cb320de906a1f1b9f4e12a/la-gran-via-de-madrid-1072541.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://www.educaciontrespuntocero.com/wp-content/uploads/2019/02/girasoles-978x652.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://media.istockphoto.com/id/930824730/es/foto/machu-picchu-per%C3%BA.jpg?s=612x612&w=0&k=20&c=w05Wt9EcVHI1W4B_pem-tlnzRVmzi1jBlXjNLoTvg4Y=" alt="">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://misanimales.com/wp-content/uploads/2020/04/panda-rojo-cara-1024x683.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://media.wired.com/photos/593261cab8eb31692072f129/master/w_2560%2Cc_limit/85120553.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-4 col-lg-4">
+                <img class="img-cont" src="https://images.hola.com/imagenes/viajes/20220930218161/salto-angel-venezuela-catarata-mas-alta-mundo/1-145-411/salto-del-angel-canaima-venezuela-m.jpg?tx=w_680" alt="">
+              </div>
+            </div>
+          </div>
+            <!-- IMAGENES 2 -->
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="card" >
+            <div class="titulo d-flex justify-content-between">
+            <p><strong>Smart Pitbull</strong></p>
+            <p class="text-secondary">18/20</p>
+            </div>
+            <img src="https://nationaltoday.com/wp-content/uploads/2022/07/14-Pitbull-Awareness-Month-1200x834.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>300 likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card" >
+            <div class="titulo d-flex justify-content-between">
+            <p><strong>Eiffel Tower</strong></p>
+            <p class="text-secondary">18/20</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1564594736624-def7a10ab047?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>204 likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="titulo d-flex justify-content-between">
+              <p><strong>Cute Panda!</strong></p>
+              <p class="text-secondary">16/20</p>
+            </div>
+            <img src="https://imagesvibe.com/wp-content/uploads/2023/03/Cute-Panda-Images1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p><strong>250 likes</strong></p>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div>
+    
+    
+    
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
